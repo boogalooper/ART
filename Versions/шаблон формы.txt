@@ -1,0 +1,357 @@
+/* 
+Code for Import https://scriptui.joonas.me — (Triple click to select): 
+{"activeId":132,"items":{"item-0":{"id":0,"type":"Dialog","parentId":false,"style":{"varName":"w","text":"strMessage","preferredSize":[0,0],"margins":16,"orientation":"column","spacing":10,"alignChildren":["fill","top"]}},"item-9":{"id":9,"type":"EditText","parentId":73,"style":{"varName":"etLr","text":"2015 - Иванова Жанна Петровна, учитель информатики и обществознания","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-10":{"id":10,"type":"Panel","parentId":0,"style":{"varName":"pnReplace","text":"Замена и подстановка текста:","preferredSize":[0,0],"margins":[20,10,10,10],"orientation":"row","spacing":10,"alignChildren":["left","top"],"alignment":null}},"item-16":{"id":16,"type":"Slider","parentId":45,"style":{"varName":null,"helpTip":null}},"item-17":{"id":17,"type":"Panel","parentId":128,"style":{"varName":null,"text":"Предпросмотр","preferredSize":[0,0],"margins":10,"orientation":"row","spacing":10,"alignChildren":["center","fill"],"alignment":null}},"item-18":{"id":18,"type":"EditText","parentId":17,"style":{"varName":"etPreview","text":"","preferredSize":[360,80],"alignment":null,"helpTip":null}},"item-23":{"id":23,"type":"DropDownList","parentId":44,"style":{"varName":null,"text":"","listItems":"Слово,Интервал слов,Произвольный текст,Замена текста","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-24":{"id":24,"type":"Slider","parentId":44,"style":{"varName":null,"helpTip":null}},"item-25":{"id":25,"type":"StaticText","parentId":45,"style":{"varName":null,"text":"от:","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-26":{"id":26,"type":"StaticText","parentId":45,"style":{"varName":null,"text":"до:","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-27":{"id":27,"type":"Slider","parentId":45,"style":{"varName":null,"helpTip":null}},"item-28":{"id":28,"type":"DropDownList","parentId":44,"style":{"varName":null,"text":"","listItems":"с начала строки, с конца строки","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-29":{"id":29,"type":"DropDownList","parentId":45,"style":{"varName":null,"text":"","listItems":"с начала строки, с конца строки","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-36":{"id":36,"type":"EditText","parentId":46,"style":{"varName":null,"text":"","preferredSize":[200,0],"alignment":null,"helpTip":null}},"item-43":{"id":43,"type":"Group","parentId":92,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"column","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-44":{"id":44,"type":"Group","parentId":43,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-45":{"id":45,"type":"Group","parentId":43,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-46":{"id":46,"type":"Group","parentId":43,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-47":{"id":47,"type":"Group","parentId":43,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-48":{"id":48,"type":"Checkbox","parentId":74,"style":{"varName":null,"text":"Разбивать на подстроки:","preferredSize":[0,0],"alignment":null,"helpTip":null,"checked":true}},"item-49":{"id":49,"type":"StaticText","parentId":47,"style":{"varName":null,"text":"найти:","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-50":{"id":50,"type":"StaticText","parentId":47,"style":{"varName":null,"text":"заменить:","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-51":{"id":51,"type":"EditText","parentId":47,"style":{"varName":null,"text":"","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-52":{"id":52,"type":"EditText","parentId":47,"style":{"varName":null,"text":"","preferredSize":[150,0],"alignment":null,"helpTip":null}},"item-53":{"id":53,"type":"Divider","parentId":43,"style":{"varName":null}},"item-54":{"id":54,"type":"ListBox","parentId":67,"style":{"varName":"lst","listItems":"Строка 1,Строка 2","preferredSize":[100,250],"alignment":null,"helpTip":null,"selection":[0]}},"item-57":{"id":57,"type":"Divider","parentId":44,"style":{"varName":null,"text":""}},"item-64":{"id":64,"type":"Divider","parentId":45,"style":{"varName":null}},"item-65":{"id":65,"type":"Divider","parentId":46,"style":{"varName":null}},"item-66":{"id":66,"type":"Divider","parentId":47,"style":{"varName":null}},"item-67":{"id":67,"type":"Group","parentId":10,"style":{"varName":"grLines","preferredSize":[0,0],"margins":0,"orientation":"column","spacing":0,"alignChildren":["center","center"],"alignment":null}},"item-73":{"id":73,"type":"Panel","parentId":0,"style":{"varName":"pnLr","text":"Активный слой:","preferredSize":[0,0],"margins":[20,10,10,10],"orientation":"column","spacing":10,"alignChildren":["fill","top"],"alignment":null}},"item-74":{"id":74,"type":"Group","parentId":43,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-75":{"id":75,"type":"Group","parentId":67,"style":{"varName":"grBnLines","preferredSize":[0,0],"margins":0,"orientation":"row","spacing":0,"alignChildren":["center","center"],"alignment":null}},"item-92":{"id":92,"type":"Group","parentId":10,"style":{"varName":"grMain","preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-94":{"id":94,"type":"Button","parentId":75,"style":{"varName":"bnAdd","text":"+","justify":"center","preferredSize":[50,0],"alignment":null,"helpTip":null}},"item-95":{"id":95,"type":"Button","parentId":75,"style":{"varName":"BnDel","text":"-","justify":"center","preferredSize":[50,0],"alignment":null,"helpTip":null}},"item-96":{"id":96,"type":"Button","parentId":44,"style":{"varName":null,"text":"+","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-97":{"id":97,"type":"Button","parentId":45,"style":{"varName":null,"text":"+","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-98":{"id":98,"type":"Button","parentId":46,"style":{"varName":null,"text":"+","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-99":{"id":99,"type":"Button","parentId":47,"style":{"varName":null,"text":"+","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-100":{"id":100,"type":"Button","parentId":44,"style":{"varName":null,"text":"-","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-101":{"id":101,"type":"Button","parentId":45,"style":{"varName":null,"text":"-","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-102":{"id":102,"type":"Button","parentId":46,"style":{"varName":null,"text":"-","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-103":{"id":103,"type":"Button","parentId":47,"style":{"varName":null,"text":"-","justify":"center","preferredSize":[30,0],"alignment":null,"helpTip":null}},"item-104":{"id":104,"type":"DropDownList","parentId":74,"style":{"varName":null,"text":"","listItems":"количество строк, количество слов","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-105":{"id":105,"type":"DropDownList","parentId":45,"style":{"varName":null,"text":"","listItems":"Слово,Интервал слов,Произвольный текст,Замена текста","preferredSize":[0,0],"alignment":null,"selection":1,"helpTip":null}},"item-106":{"id":106,"type":"DropDownList","parentId":46,"style":{"varName":null,"text":"","listItems":"Слово,Интервал слов,Произвольный текст,Замена текста","preferredSize":[0,0],"alignment":null,"selection":2,"helpTip":null}},"item-107":{"id":107,"type":"DropDownList","parentId":47,"style":{"varName":null,"text":"","listItems":"Слово,Интервал слов,Произвольный текст,Замена текста","preferredSize":[0,0],"alignment":null,"selection":3,"helpTip":null}},"item-108":{"id":108,"type":"Slider","parentId":74,"style":{"varName":null,"helpTip":null}},"item-109":{"id":109,"type":"StaticText","parentId":74,"style":{"varName":null,"text":"00","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-110":{"id":110,"type":"StaticText","parentId":44,"style":{"varName":null,"text":"00","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-111":{"id":111,"type":"StaticText","parentId":45,"style":{"varName":null,"text":"00","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-112":{"id":112,"type":"StaticText","parentId":45,"style":{"varName":null,"text":"00","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-113":{"id":113,"type":"DropDownList","parentId":74,"style":{"varName":null,"text":"","listItems":"длинная строка начинает текст,длинная строка заканчивает текст","preferredSize":[0,0],"alignment":null,"selection":1,"helpTip":null}},"item-115":{"id":115,"type":"Checkbox","parentId":116,"style":{"varName":"ch1","text":"кириллица","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-116":{"id":116,"type":"Group","parentId":73,"style":{"varName":"grFilter","preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","center"],"alignment":null}},"item-117":{"id":117,"type":"Checkbox","parentId":116,"style":{"varName":"ch2","text":"латиница","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-118":{"id":118,"type":"Checkbox","parentId":116,"style":{"varName":"ch3","text":"цифры","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-119":{"id":119,"type":"Checkbox","parentId":116,"style":{"varName":"ch4","text":"точка, запятая","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-120":{"id":120,"type":"Checkbox","parentId":116,"style":{"varName":"ch5","text":"тире, двоеточие","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-121":{"id":121,"type":"Checkbox","parentId":116,"style":{"varName":"ch6","text":"скобки","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-122":{"id":122,"type":"StaticText","parentId":116,"style":{"varName":"stFilter","text":"фильтрация символов:","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-123":{"id":123,"type":"Button","parentId":125,"style":{"varName":null,"text":"Отмена","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-124":{"id":124,"type":"Button","parentId":125,"style":{"varName":null,"text":"Сохранить настройки","justify":"center","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-125":{"id":125,"type":"Group","parentId":128,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"column","spacing":10,"alignChildren":["fill","center"],"alignment":null}},"item-127":{"id":127,"type":"Panel","parentId":128,"style":{"varName":null,"text":"Дополнительно","preferredSize":[360,0],"margins":10,"orientation":"column","spacing":10,"alignChildren":["fill","top"],"alignment":null}},"item-128":{"id":128,"type":"Group","parentId":0,"style":{"varName":null,"preferredSize":[0,0],"margins":0,"orientation":"row","spacing":10,"alignChildren":["left","fill"],"alignment":null}},"item-130":{"id":130,"type":"DropDownList","parentId":127,"style":{"varName":null,"text":"","listItems":"сохранять позицию верхнего края,сохранять позицию нижнего края","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}},"item-131":{"id":131,"type":"StaticText","parentId":127,"style":{"varName":null,"text":"при несовпадении количества строк:","justify":"left","preferredSize":[0,0],"alignment":null,"helpTip":null}},"item-132":{"id":132,"type":"DropDownList","parentId":127,"style":{"varName":null,"text":"","listItems":"удалять пустые строки,оставлять пустые строки","preferredSize":[0,0],"alignment":null,"selection":0,"helpTip":null}}},"order":[0,73,9,116,122,115,117,118,119,120,121,10,67,54,75,94,95,92,43,44,96,100,23,57,28,24,110,45,97,101,105,64,29,25,16,111,26,27,112,46,98,102,106,65,36,47,99,103,107,66,49,52,50,51,53,74,48,104,108,109,113,128,17,18,127,131,130,132,125,124,123]}
+*/ 
+
+// W
+// =
+var w = new Window("dialog"); 
+    w.text = "strMessage"; 
+    w.orientation = "column"; 
+    w.alignChildren = ["fill","top"]; 
+    w.spacing = 10; 
+    w.margins = 16; 
+
+// PNLR
+// ====
+var pnLr = w.add("panel"); 
+    pnLr.text = "Активный слой:"; 
+    pnLr.orientation = "column"; 
+    pnLr.alignChildren = ["fill","top"]; 
+    pnLr.spacing = 10; 
+    pnLr.margins = [10,20,10,10]; 
+
+var etLr = pnLr.add("edittext"); 
+    etLr.text = "2015 - Иванова Жанна Петровна, учитель информатики и обществознания"; 
+
+// GRFILTER
+// ========
+var grFilter = pnLr.add("group"); 
+    grFilter.orientation = "row"; 
+    grFilter.alignChildren = ["left","center"]; 
+    grFilter.spacing = 10; 
+    grFilter.margins = 0; 
+
+var stFilter = grFilter.add("statictext"); 
+    stFilter.text = "фильтрация символов:"; 
+
+var ch1 = grFilter.add("checkbox"); 
+    ch1.text = "кириллица"; 
+
+var ch2 = grFilter.add("checkbox"); 
+    ch2.text = "латиница"; 
+
+var ch3 = grFilter.add("checkbox"); 
+    ch3.text = "цифры"; 
+
+var ch4 = grFilter.add("checkbox"); 
+    ch4.text = "точка, запятая"; 
+
+var ch5 = grFilter.add("checkbox"); 
+    ch5.text = "тире, двоеточие"; 
+
+var ch6 = grFilter.add("checkbox"); 
+    ch6.text = "скобки"; 
+
+// PNREPLACE
+// =========
+var pnReplace = w.add("panel"); 
+    pnReplace.text = "Замена и подстановка текста:"; 
+    pnReplace.orientation = "row"; 
+    pnReplace.alignChildren = ["left","top"]; 
+    pnReplace.spacing = 10; 
+    pnReplace.margins = [10,20,10,10]; 
+
+// GRLINES
+// =======
+var grLines = pnReplace.add("group"); 
+    grLines.orientation = "column"; 
+    grLines.alignChildren = ["center","center"]; 
+    grLines.spacing = 0; 
+    grLines.margins = 0; 
+
+var lst_array = ["Строка 1","Строка 2"]; 
+var lst = grLines.add("listbox", undefined, lst_array); 
+    lst.selection = 0; 
+    lst.preferredSize.width = 100; 
+    lst.preferredSize.height = 250; 
+
+// GRBNLINES
+// =========
+var grBnLines = grLines.add("group"); 
+    grBnLines.orientation = "row"; 
+    grBnLines.alignChildren = ["center","center"]; 
+    grBnLines.spacing = 0; 
+    grBnLines.margins = 0; 
+
+var bnAdd = grBnLines.add("button"); 
+    bnAdd.text = "+"; 
+    bnAdd.preferredSize.width = 50; 
+    bnAdd.justify = "center"; 
+
+var BnDel = grBnLines.add("button"); 
+    BnDel.text = "-"; 
+    BnDel.preferredSize.width = 50; 
+    BnDel.justify = "center"; 
+
+// GRMAIN
+// ======
+var grMain = pnReplace.add("group"); 
+    grMain.orientation = "row"; 
+    grMain.alignChildren = ["left","center"]; 
+    grMain.spacing = 10; 
+    grMain.margins = 0; 
+
+// GROUP1
+// ======
+var group1 = grMain.add("group"); 
+    group1.orientation = "column"; 
+    group1.alignChildren = ["left","center"]; 
+    group1.spacing = 10; 
+    group1.margins = 0; 
+
+// GROUP2
+// ======
+var group2 = group1.add("group"); 
+    group2.orientation = "row"; 
+    group2.alignChildren = ["left","center"]; 
+    group2.spacing = 10; 
+    group2.margins = 0; 
+
+var button1 = group2.add("button"); 
+    button1.text = "+"; 
+    button1.preferredSize.width = 30; 
+    button1.justify = "center"; 
+
+var button2 = group2.add("button"); 
+    button2.text = "-"; 
+    button2.preferredSize.width = 30; 
+    button2.justify = "center"; 
+
+var dropdown1_array = ["Слово","Интервал слов","Произвольный текст","Замена текста"]; 
+var dropdown1 = group2.add("dropdownlist", undefined, dropdown1_array); 
+    dropdown1.selection = 0; 
+
+var divider1 = group2.add("panel"); 
+    divider1.alignment = "fill"; 
+
+var dropdown2_array = ["с начала строки","с конца строки"]; 
+var dropdown2 = group2.add("dropdownlist", undefined, dropdown2_array); 
+    dropdown2.selection = 0; 
+
+var slider1 = group2.add("slider"); 
+    slider1.minvalue = 0; 
+    slider1.maxvalue = 100; 
+    slider1.value = 50; 
+
+var statictext1 = group2.add("statictext"); 
+    statictext1.text = "00"; 
+
+// GROUP3
+// ======
+var group3 = group1.add("group"); 
+    group3.orientation = "row"; 
+    group3.alignChildren = ["left","center"]; 
+    group3.spacing = 10; 
+    group3.margins = 0; 
+
+var button3 = group3.add("button"); 
+    button3.text = "+"; 
+    button3.preferredSize.width = 30; 
+    button3.justify = "center"; 
+
+var button4 = group3.add("button"); 
+    button4.text = "-"; 
+    button4.preferredSize.width = 30; 
+    button4.justify = "center"; 
+
+var dropdown3_array = ["Слово","Интервал слов","Произвольный текст","Замена текста"]; 
+var dropdown3 = group3.add("dropdownlist", undefined, dropdown3_array); 
+    dropdown3.selection = 1; 
+
+var divider2 = group3.add("panel"); 
+    divider2.alignment = "fill"; 
+
+var dropdown4_array = ["с начала строки","с конца строки"]; 
+var dropdown4 = group3.add("dropdownlist", undefined, dropdown4_array); 
+    dropdown4.selection = 0; 
+
+var statictext2 = group3.add("statictext"); 
+    statictext2.text = "от:"; 
+
+var slider2 = group3.add("slider"); 
+    slider2.minvalue = 0; 
+    slider2.maxvalue = 100; 
+    slider2.value = 50; 
+
+var statictext3 = group3.add("statictext"); 
+    statictext3.text = "00"; 
+
+var statictext4 = group3.add("statictext"); 
+    statictext4.text = "до:"; 
+
+var slider3 = group3.add("slider"); 
+    slider3.minvalue = 0; 
+    slider3.maxvalue = 100; 
+    slider3.value = 50; 
+
+var statictext5 = group3.add("statictext"); 
+    statictext5.text = "00"; 
+
+// GROUP4
+// ======
+var group4 = group1.add("group"); 
+    group4.orientation = "row"; 
+    group4.alignChildren = ["left","center"]; 
+    group4.spacing = 10; 
+    group4.margins = 0; 
+
+var button5 = group4.add("button"); 
+    button5.text = "+"; 
+    button5.preferredSize.width = 30; 
+    button5.justify = "center"; 
+
+var button6 = group4.add("button"); 
+    button6.text = "-"; 
+    button6.preferredSize.width = 30; 
+    button6.justify = "center"; 
+
+var dropdown5_array = ["Слово","Интервал слов","Произвольный текст","Замена текста"]; 
+var dropdown5 = group4.add("dropdownlist", undefined, dropdown5_array); 
+    dropdown5.selection = 2; 
+
+var divider3 = group4.add("panel"); 
+    divider3.alignment = "fill"; 
+
+var edittext1 = group4.add("edittext"); 
+    edittext1.preferredSize.width = 200; 
+
+// GROUP5
+// ======
+var group5 = group1.add("group"); 
+    group5.orientation = "row"; 
+    group5.alignChildren = ["left","center"]; 
+    group5.spacing = 10; 
+    group5.margins = 0; 
+
+var button7 = group5.add("button"); 
+    button7.text = "+"; 
+    button7.preferredSize.width = 30; 
+    button7.justify = "center"; 
+
+var button8 = group5.add("button"); 
+    button8.text = "-"; 
+    button8.preferredSize.width = 30; 
+    button8.justify = "center"; 
+
+var dropdown6_array = ["Слово","Интервал слов","Произвольный текст","Замена текста"]; 
+var dropdown6 = group5.add("dropdownlist", undefined, dropdown6_array); 
+    dropdown6.selection = 3; 
+
+var divider4 = group5.add("panel"); 
+    divider4.alignment = "fill"; 
+
+var statictext6 = group5.add("statictext"); 
+    statictext6.text = "найти:"; 
+
+var edittext2 = group5.add("edittext"); 
+    edittext2.preferredSize.width = 150; 
+
+var statictext7 = group5.add("statictext"); 
+    statictext7.text = "заменить:"; 
+
+var edittext3 = group5.add("edittext"); 
+    edittext3.preferredSize.width = 150; 
+
+// GROUP1
+// ======
+var divider5 = group1.add("panel"); 
+    divider5.alignment = "fill"; 
+
+// GROUP6
+// ======
+var group6 = group1.add("group"); 
+    group6.orientation = "row"; 
+    group6.alignChildren = ["left","center"]; 
+    group6.spacing = 10; 
+    group6.margins = 0; 
+
+var checkbox1 = group6.add("checkbox"); 
+    checkbox1.text = "Разбивать на подстроки:"; 
+    checkbox1.value = true; 
+
+var dropdown7_array = ["количество строк","количество слов"]; 
+var dropdown7 = group6.add("dropdownlist", undefined, dropdown7_array); 
+    dropdown7.selection = 0; 
+
+var slider4 = group6.add("slider"); 
+    slider4.minvalue = 0; 
+    slider4.maxvalue = 100; 
+    slider4.value = 50; 
+
+var statictext8 = group6.add("statictext"); 
+    statictext8.text = "00"; 
+
+var dropdown8_array = ["длинная строка начинает текст","длинная строка заканчивает текст"]; 
+var dropdown8 = group6.add("dropdownlist", undefined, dropdown8_array); 
+    dropdown8.selection = 1; 
+
+// GROUP7
+// ======
+var group7 = w.add("group"); 
+    group7.orientation = "row"; 
+    group7.alignChildren = ["left","fill"]; 
+    group7.spacing = 10; 
+    group7.margins = 0; 
+
+// PANEL1
+// ======
+var panel1 = group7.add("panel"); 
+    panel1.text = "Предпросмотр"; 
+    panel1.orientation = "row"; 
+    panel1.alignChildren = ["center","fill"]; 
+    panel1.spacing = 10; 
+    panel1.margins = 10; 
+
+var etPreview = panel1.add("edittext"); 
+    etPreview.preferredSize.width = 360; 
+    etPreview.preferredSize.height = 80; 
+
+// PANEL2
+// ======
+var panel2 = group7.add("panel"); 
+    panel2.text = "Дополнительно"; 
+    panel2.preferredSize.width = 360; 
+    panel2.orientation = "column"; 
+    panel2.alignChildren = ["fill","top"]; 
+    panel2.spacing = 10; 
+    panel2.margins = 10; 
+
+var statictext9 = panel2.add("statictext"); 
+    statictext9.text = "при несовпадении количества строк:"; 
+
+var dropdown9_array = ["сохранять позицию верхнего края","сохранять позицию нижнего края"]; 
+var dropdown9 = panel2.add("dropdownlist", undefined, dropdown9_array); 
+    dropdown9.selection = 0; 
+
+var dropdown10_array = ["удалять пустые строки","оставлять пустые строки"]; 
+var dropdown10 = panel2.add("dropdownlist", undefined, dropdown10_array); 
+    dropdown10.selection = 0; 
+
+// GROUP8
+// ======
+var group8 = group7.add("group"); 
+    group8.orientation = "column"; 
+    group8.alignChildren = ["fill","center"]; 
+    group8.spacing = 10; 
+    group8.margins = 0; 
+
+var button9 = group8.add("button"); 
+    button9.text = "Сохранить настройки"; 
+    button9.justify = "center"; 
+
+var button10 = group8.add("button"); 
+    button10.text = "Отмена"; 
+    button10.justify = "center"; 
+
+w.show();
