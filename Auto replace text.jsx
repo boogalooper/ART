@@ -42,7 +42,7 @@
 ///////////////////////////////////////////////////////////////////////////////////
 
 var GUID = "e981ad2e-29f6-4695-b445-3e7644b0bf9f",
-    ver = "0.73",
+    ver = "0.731",
     strMessage = "Auto replace text",
     curLine = 0, //указатель текущей строки в списке
     wordLen = 0, // длина строки для слайдеров
@@ -132,7 +132,7 @@ function buildWindow() {
         w.alignChildren = ["fill", "top"];
         w.spacing = 10;
         w.margins = 16;
-        
+
         // PNLR
         // ====
         var pnLr = w.add("panel");
@@ -201,7 +201,7 @@ function buildWindow() {
         pnReplace.alignChildren = ["left", "top"];
         pnReplace.spacing = 10;
         pnReplace.margins = 10;
-       // pnReplace.maximumSize.height = 400
+        // pnReplace.maximumSize.height = 400
 
         // =========================================
         // preset module
@@ -562,7 +562,7 @@ function buildWindow() {
     // изменение маски
     etMask.onChanging = function () { cfg.mask = this.text }
 
-   
+
     // загрузка данных при открытии формы
     w.onShow = function (fromPreset) {
         renew = false
@@ -847,7 +847,7 @@ function buildWindow() {
         slFrom.value = 0;
         slFrom.preferredSize.width = 100
 
-        
+
         var stFromValue = gr.add("statictext");
         stFromValue.text = "00";
 
@@ -1627,7 +1627,7 @@ function findNearest() {
                 var l2 = AM.getTextRect(AM.getLayerPropertyById('textKey', minDist[0].id), w, h);
 
                 AM.selectLayer(minDist[0].id)
-                try { AM.moveLayer(getVector(l2, l1)) } catch (e) { }
+                try { AM.moveLayer(getVector(l2.points, l1.points), l1.units) } catch (e) { }
                 AM.selectLayer(lr.id)
             }
 
@@ -2120,6 +2120,7 @@ function ActionManager() {
             y0 = b.getUnitDoubleValue(gTop),
             x1 = b.getUnitDoubleValue(gRight),
             y1 = b.getUnitDoubleValue(gBottom),
+            tu = t2s(b.getUnitDoubleType(gTop)),
             p = [[x0, y0], [x1, y0], [x1, y1], [x0, y1]],
             ch = cp.getUnitDoubleValue(gHorizontal),
             cv = cp.getUnitDoubleValue(gVertical);
@@ -2132,7 +2133,7 @@ function ActionManager() {
         tranform(p[2], xx, xy, yx, yy, tx, ty);
         tranform(p[3], xx, xy, yx, yy, tx, ty);
 
-        return p
+        return { points: p, units: tu };
 
         function tranform(p, xx, xy, yx, yy, tx, ty) {
             var x = p[0],
@@ -2209,7 +2210,7 @@ function ActionManager() {
         executeAction(gSelect, desc, DialogModes.NO)
     }
 
-    this.moveLayer = function (offset) {
+    this.moveLayer = function (offset, units) {
         var ref = new ActionReference()
         var desc = new ActionDescriptor()
 
@@ -2217,7 +2218,7 @@ function ActionManager() {
         desc.putReference(gNull, ref)
 
         var d1 = new ActionDescriptor();
-        d1.putUnitDouble(gHorizontal, p = s2t("distanceUnit"), offset[0]);
+        d1.putUnitDouble(gHorizontal, p = s2t(units), offset[0]);
         d1.putUnitDouble(gVertical, p, offset[1]);
         desc.putObject(gTo, s2t("offset"), d1);
         executeAction(s2t("move"), desc, DialogModes.NO);
@@ -2418,16 +2419,4 @@ function Preset() {
         this.filterOther = true
         this.parsingOptions = "0\r-1"
     }
-}
-
-function checkDesc(desc) {
-    if (desc.typename == 'ActionList') {
-        (z = new ActionDescriptor()).putList(s2t('ActionList'), desc)
-    } else {
-        z = desc
-    }
-    (d = new ActionDescriptor()).putObject(s2t("object"), s2t("object"), z);
-    eval('var obj = ' + executeAction(s2t("convertJSONdescriptor"), d, DialogModes.NO).getString(s2t("json")));
-    $.writeln(executeAction(s2t("convertJSONdescriptor"), d, DialogModes.NO).getString(s2t("json")))
-    return obj
 }
